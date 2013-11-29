@@ -35,7 +35,7 @@ get '/index' do
 end
 ```
 
-With these codes, when we accessed `http://some.server/sinatra/app1/`, the server redirects us to `http://some.server/index`, not to `http://some.server/sinatra/app1/index`, which we expected.
+With these codes, when we accessed `http://some.server/sinatra/app1/`, the server redirects us to `http://some.server/index`, not to `http://some.server/sinatra/app1/index` which we expected.
 
 To avoid this mis-redirection, we should use `enable :prefixed_redirects`.
 
@@ -51,4 +51,4 @@ class App << Sinatra::Base
 end
 App.run!
 ```
- These codes redirects us to the expected URI, in both WEBrick and apache+passenger environments.  Happy!
+ These codes redirect us to the expected URI, in both WEBrick and apache+passenger environments.  Happy!
