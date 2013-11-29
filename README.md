@@ -3,7 +3,7 @@ sinatra-prefixed-redirects
 This is a sample sinatra app using prefixed-redirects enabled.
 
 ## Why prefixed-redirects?
-In almost all how-to site, a sinatra app runs with its proper web server, like `ruby app.rb` from the shell.  In that case, all requests are placed in the root directory of the server.  We can write the URI path patterns like
+In almost all how-to sites, a sinatra app runs with its proper web server, like `ruby app.rb` from the shell.  In that case, all requests are placed in the root directory of the server.  We can write the URI path patterns like
 
 ```ruby:app.rb
 get '/index' do
